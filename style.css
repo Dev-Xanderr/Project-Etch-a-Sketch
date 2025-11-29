@@ -1,4 +1,4 @@
-.zone{
+.zone {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,15 +11,14 @@
     justify-content: center;
     flex-wrap: wrap;
     border: 2px solid black;
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 600px;
 }
 
-.grid-item{
-    width: calc(100%/16);
-    height: calc(100%/16);
+.grid-item {
+    /* Dynamic sizing based on current grid size */
+    width: calc(100% / var(--grid-size, 16));
+    height: calc(100% / var(--grid-size, 16));
     border: 1px solid lightgray;
     box-sizing: border-box;
-    
-
 }
