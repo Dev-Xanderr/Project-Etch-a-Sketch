@@ -6,7 +6,6 @@ let currentGridSize = 16;
 function createGrid(size) {
     container.innerHTML = "";
     
-    // Set CSS custom property for dynamic sizing
     container.style.setProperty('--grid-size', size);
     
     for (let i = 0; i < size * size; i++) {
@@ -15,26 +14,25 @@ function createGrid(size) {
         container.appendChild(gridItem);
     }
     
-    // Add mouseover events to new grid items
     const gridItems = document.querySelectorAll(".grid-item");
     gridItems.forEach(item => {
         item.addEventListener("mouseover", () => {
             const r = Math.floor(Math.random() * 256);
             const g = Math.floor(Math.random() * 256);
             const b = Math.floor(Math.random() * 256);
-            item.style.backgroundColor = `rgb(${r}, ${g}, ${b})`; // Fixed space
+            item.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
         });
     });
 }
 
-// Create initial 16x16 grid
+
 createGrid(currentGridSize);
 
-// Button click with prompt
+
 btn.addEventListener("click", () => {
     const userInput = prompt("Enter grid size (1-100):", currentGridSize);
     
-    if (userInput === null) return; // User clicked Cancel
+    if (userInput === null) return; 
     
     const newSize = parseInt(userInput);
     

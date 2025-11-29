@@ -16,7 +16,6 @@
 }
 
 .grid-item {
-    /* Dynamic sizing based on current grid size */
     width: calc(100% / var(--grid-size, 16));
     height: calc(100% / var(--grid-size, 16));
     border: 1px solid lightgray;
