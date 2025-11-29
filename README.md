@@ -21,7 +21,7 @@ Prerequisites
 
 Clone
 ```
-git clone https://github.com/<user>/Project-Etch-a-Sketch.git
+git clone [https://github.com/<user>/Project-Etch-a-Sketch.git](https://github.com/Dev-Xanderr/Project-Etch-a-Sketch.git)
 cd Project-Etch-a-Sketch
 ```
 
