@@ -1,0 +1,25 @@
+.zone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+}
+
+.grid-item{
+    width: calc(100%/16);
+    height: calc(100%/16);
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    
+
+}
